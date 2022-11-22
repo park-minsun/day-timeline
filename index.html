@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./main.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        ul{
+            margin: 0;
+        }
+        li{
+            list-style: none;
+            line-height: 1.4;
+        }
+        .timeline{
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 100px;
+        }
+        .year{
+            width: 30%;
+            font-size: 30px;
+            font-weight: bold;
+            color: cadetblue;
+        }
+        .his_txt{
+            width: 70%;
+            border-left: 2px solid cadetblue;
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 100px;
+        }
+        .his_txt::before{
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: cadetblue;
+            border: 10px solid #fff;
+            top: 0;
+            left: -20px;
+        }
+        .countday{
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background-color: beige;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .wow{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <div class="year">2022</div>
+        <div class="his_txt">
+            <ul>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="countday">
+			<h3>기념일</h3>
+            <div class="wow">
+			<p id="accent" class="accent"><span>기념일</span></p>
+            <p>일</p>
+        </div>
+        </p>
+    </div>
+</body>
+</html>
