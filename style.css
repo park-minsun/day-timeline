@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+ul{
+    margin: 0;
+}
+li{
+    list-style: none;
+    line-height: 1.4;
+}
+.timeline{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.year{
+    width: 30%;
+    font-size: 30px;
+    font-weight: bold;
+    color: cadetblue;
+}
+.his_txt{
+    width: 70%;
+    border-left: 2px solid cadetblue;
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 100px;
+}
+.his_txt::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    border: 10px solid #fff;
+    top: 0;
+    left: -20px;
+}
+.countday{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: beige;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wow{
+    display: flex;
+}
+
+/*  */
+
+.check_wrap{
+    display: flex;
+    
+}
+.box {
+    width: 1000px;
+    margin: 0 auto;
+}
+.box input[id="chkbox"]{
+    display: none;
+}
+.box input[id="chkbox"] + label{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #BABABA;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    margin: 10px 20px;
+}
+input[id="chkbox"]:checked + label::after{
+    content:"";
+    background: url(./checked.png) no-repeat center;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.one{font-size: 20px; line-height: 1.4;}
+
+.pr_strong{color: blue; text-decoration: underline; cursor: pointer;}
+
+.check_txt{
+    width: 800px;
+    height: 383px;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 30px;
+    background-color: aliceblue;
+}
+.closeBtn{
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+  
